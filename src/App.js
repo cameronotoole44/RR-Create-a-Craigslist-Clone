@@ -2,16 +2,17 @@
 
 // Import components
 import './App.css';
+import gallery from './components/gallery';
 
-function App(){
+function App() {
   return (
     <div>
       <h1>craigslist</h1>
       <div className="App">
-        {/* Your content will go here! */}
+        <gallery />
       </div>
     </div>
   );
-}
+};
 
 export default App;
