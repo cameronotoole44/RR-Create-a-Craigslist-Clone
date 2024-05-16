@@ -1,18 +1,19 @@
 import React from 'react';
-import Posting from './posting';
+import Post from './Posting';
 
-const craigsPost = require('../postings');
-// console.log(craigsPost);
+const craigPost = require('../postings')
+
+let postList = craigPost.postings.map((data, i) => {
+    return <Post data={data} key={i} />;
+});
 
 function Gallery() {
     return (
-        <div className='gallery'>
+        <div>
             <h1>Gallery</h1>
-            {craigsPost.postings.map((posting, i) => {
-                return <Posting posting={posting} key={i} />
-            })}
+            {postList}
         </div>
     )
-};
+}
 
 export default Gallery;

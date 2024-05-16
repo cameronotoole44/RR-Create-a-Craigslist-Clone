@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 
 function Posting(props) {
     return (
-        <div className='posting'>
-            <h1>{props.posting.title}</h1>
-            <p>{props.posting.description}</p>
-            <img src={props.posting.imageURL} alt={props.posting.title} />
+        <div>
+            <h1>{props.data.title}</h1>
+            <h4>{props.data.price}</h4>
+            <p>{props.data.description}</p>
+            <img src={props.data.imageURL} />
         </div>
     )
 }

@@ -1,18 +1,16 @@
-// Import data
-
 // Import components
 import './App.css';
-import Gallery from './components/gallery';
+import Gallery from './components/Gallery'
 
 function App() {
   return (
     <div>
-      <h1>craigslist</h1>
+      <h1>cameronslist</h1>
       <div className="App">
-        <gallery />
+        <Gallery />
       </div>
     </div>
   );
-};
+}
 
 export default App;
